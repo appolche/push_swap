@@ -78,3 +78,16 @@ void print_test(t_list *stack)
         tmp = tmp->next;
     }
 }
+
+void free_stack(t_list **stack)
+{
+    t_list *tmp;
+
+    while (*stack)
+    {
+        tmp = (*stack)->next;
+        free(*stack);
+        *stack = tmp;
+    }
+    free(*stack);
+}
