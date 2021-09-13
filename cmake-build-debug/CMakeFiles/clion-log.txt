@@ -1,4 +1,4 @@
-/snap/clion/163/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_C_COMPILER=/usr/bin/clang -DCMAKE_DEPENDS_USE_COMPILER=FALSE -G "CodeBlocks - Unix Makefiles" /home/dleaves/projects/push_swap1
+/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_DEPENDS_USE_COMPILER=FALSE -G "CodeBlocks - Unix Makefiles" /Users/dleaves/Desktop/ps_clion
 -- Configuring done
 -- Generating done
--- Build files have been written to: /home/dleaves/projects/push_swap1/cmake-build-debug
+-- Build files have been written to: /Users/dleaves/Desktop/ps_clion/cmake-build-debug
