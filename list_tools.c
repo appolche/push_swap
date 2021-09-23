@@ -1,21 +1,23 @@
 # include "push_swap.h"
 
-t_list *create_node(int value)
+t_stack *create_stack(int value)
 {
-    t_list *node;
+    t_stack *node;
 
-    node = (t_list *)malloc(sizeof(t_list));
+    node = (t_stack *)malloc(sizeof(t_stack));
+    if (!node)
+        return(NULL);
     node->next = NULL;
     node->prev = NULL;
     node->value = value;
     return (node);
 }
 
-void ft_push_back(t_list *stack, int value)
+void ft_push_back(t_stack *stack, int value)
 {
-    t_list *node;
+    t_stack *node;
 
-    node = (t_list *)malloc(sizeof(t_list));
+    node = (t_stack *)malloc(sizeof(t_stack));
     while (stack->next)
     {
         stack = stack->next;
@@ -26,7 +28,7 @@ void ft_push_back(t_list *stack, int value)
     stack->next = node;
 }
 
-void ft_pop_back(t_list *stack)
+void ft_pop_back(t_stack *stack)
 {
     while (stack->next)
     {
@@ -36,11 +38,11 @@ void ft_pop_back(t_list *stack)
     free(stack);
 }
 
-t_list *ft_push_front(t_list *stack, int value)
+t_stack *ft_push_front(t_stack *stack, int value)
 {
-    t_list *node;
+    t_stack *node;
 
-    node = (t_list *)malloc(sizeof(t_list));
+    node = (t_stack *)malloc(sizeof(t_stack));
 
     if (stack && stack->prev == NULL)
     {
@@ -50,14 +52,15 @@ t_list *ft_push_front(t_list *stack, int value)
         stack->prev = node;
     }
     else 
-        node = create_node(value);
+        node = create_stack(value);
     return (node);
 }
 
-t_list *ft_pop_front(t_list *stack)
+t_stack *ft_pop_front(t_stack *stack)
 {
-    t_list *tmp;
+    t_stack *tmp;
 
+    tmp = NULL;
     if (stack && stack->next)
     {
         tmp = stack->next;
@@ -67,9 +70,9 @@ t_list *ft_pop_front(t_list *stack)
     return (tmp);
 }
 
-void print_test(t_list *stack)
+void print_test(t_stack *stack)
 {
-    t_list *tmp;
+    t_stack *tmp;
 
     tmp = stack;
     while (tmp)
@@ -79,15 +82,23 @@ void print_test(t_list *stack)
     }
 }
 
-void free_stack(t_list **stack)
+void free_stack(t_list **frame)
 {
-    t_list *tmp;
+    t_stack *tmp;
+    t_stack *st_a = (*frame)->stack_a;
+    t_stack *st_b = (*frame)->stack_b;
 
-    while (*stack)
+    while (st_a)
     {
-        tmp = (*stack)->next;
-        free(*stack);
-        *stack = tmp;
+        tmp = (st_a)->next;
+        free(st_a);
+        st_a = tmp;
     }
-    free(*stack);
+    while (st_b)
+    {
+        tmp = (st_b)->next;
+        free(st_b);
+        st_b = tmp;
+    }
+    free(*frame);
 }

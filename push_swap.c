@@ -1,8 +1,5 @@
 # include "push_swap.h"
-
-void error_handling()
-{}
-
+# include <stdio.h>
 
 int	ft_is_number(char *str)
 {
@@ -20,40 +17,118 @@ int	ft_is_number(char *str)
     return (1);
 }
 
-int main(int argc, char **argv)
+size_t error_handling(int argc, char **argv)
 {
-    t_list *stack_a;
-    t_list *stack_b;
-    //int max;
-    //int min;
-    int current;
     int i;
 
     i = 1;
-    if (argc == 1)
-        return (0);
+    if (argc < 2)
+        return (write(2, "Error\n", 6));
     while (argv[i])
     {
         if(!ft_is_number(argv[i]))
-            return(0);
+            return(write(2, "Error\n", 6));
         i++;
     }
-    i = argc - 2;
-    stack_a = create_node(ft_atoi(argv[argc-1]));
-    //min = max = stack_a->value;
-    while (i)
+    return (0);
+}
+
+void find_algorithm();
+
+t_list *frame_init(t_list *frame, int argc, char **argv)
+{
+    frame->stack_a = create_stack(ft_atoi(argv[argc-1]));
+    if(!frame->stack_a)
+        return (NULL);
+    frame->stack_b = NULL;
+    frame->argv = argv;
+    return(frame);
+}
+
+void ft_quick_sort(int *str, int min, int max)
+{
+    if (min < max)
     {
-        current = ft_atoi(argv[i]);
-        /*if (min > current)
-            min = current;
-        if (max < current)
-            max = current;*/
-        ft_push_back(stack_a, current);
+        int left = min, right = max, middle = str[(left + right) / 2];
+        do
+        {
+            while (str[left] < middle) left++;
+            while (str[right] > middle) right--;
+            if (left <= right)
+            {
+                int tmp = str[left];
+                str[left] = str[right];
+                str[right] = tmp;
+                left++;
+                right--;
+            }
+        } while (left <= right);
+        ft_quick_sort(str, min, right);
+        ft_quick_sort(str, left, max);
+    }
+}
+
+int main(int argc, char **argv)
+{
+    t_list *frame;
+    char **tmp;
+    int *str;
+    int current;
+    int i;
+    int min = ft_atoi(argv[1]);
+    int max = ft_atoi(argv[1]);
+
+    error_handling(argc, argv);
+
+    str = (int*)malloc(sizeof(int)*(argc-1));
+    if (!str)
+        return (0);
+    i = 1;
+    tmp = argv;
+    while (tmp[i])
+    {
+        str[i-1] = ft_atoi(tmp[i]);
+        i++;
+    }
+    i = 0;
+    while (i != (argc-1))
+    {
+        if (str[i] > max)
+            max = str[i];
+        if (str[i] < min)
+            min = str[i];
+        printf("%d \n", str[i]);
+        i++;
+    }
+    printf("\n%d\n\n", max);
+
+    frame = (t_list*)malloc(sizeof(t_list));
+    if (!frame)
+        return(0);
+    frame_init(frame, argc, argv);
+    i = argc - 2;
+    while (i >= 0)
+    {
+        ft_push_back(frame->stack_a, str[i]);
         i--;
     }
-    print_test(stack_a);
-    printf("\n\n");
 
-    free_stack(&stack_a);
-    free_stack(&stack_b);
+    printf("%d\n\n", min);
+
+    ft_quick_sort(str, 0, i-1);
+    i = 0;
+    while (i != (argc-1))
+    {
+        if (str[i] > max)
+            max = str[i];
+        if (str[i] < min)
+            min = str[i];
+
+        printf("%d \n", str[i]);
+        i++;
+    }
+
+    print_test(frame->stack_a);
+    free_stack(&frame);
+    return(0);
 }

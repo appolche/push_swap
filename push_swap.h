@@ -7,29 +7,34 @@
 # include <stdio.h> // DELETE
 //# include <fcntl.h>
 
-typedef struct s_list
+typedef struct s_stack
 {
-    struct s_list *next;
-    struct s_list *prev;
+    struct s_stack *next;
+    struct s_stack *prev;
     int     value;
-}               t_list;
+    int     order;
+}               t_stack;
 
 
-typedef struct		s_frame
+typedef struct		s_list
 {
-	t_list          *stack_a;
-	t_list          *stack_b;
+	t_stack         *stack_a;
+	t_stack         *stack_b;
 
 	char			**argv;
-}					t_frame;
+}					t_list;
 
 
-t_list *create_node(int value);
-void ft_push_back(t_list *stack, int value);
-void ft_pop_back(t_list *stack);
-t_list *ft_push_front(t_list *stack, int value);
-t_list *ft_pop_front(t_list *stack);
-void print_test(t_list *stack);
-void free_stack(t_list **stack);
+t_stack *create_stack(int value);
+void ft_push_back(t_stack *stack, int value);
+void ft_pop_back(t_stack *stack);
+t_stack *ft_push_front(t_stack *stack, int value);
+t_stack *ft_pop_front(t_stack *stack);
+void print_test(t_stack *stack);
+void free_stack(t_list **frame);
+int	ft_is_number(char *str);
+size_t error_handling(int argc, char **argv);
+t_list *frame_init(t_list *frame, int argc, char **argv);
+void ft_quick_sort(int *str, int min, int max);
 
 #endif
