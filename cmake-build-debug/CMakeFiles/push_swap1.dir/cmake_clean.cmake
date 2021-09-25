@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/push_swap1.dir/error_handling.c.o"
   "CMakeFiles/push_swap1.dir/libft/ft_atoi.c.o"
   "CMakeFiles/push_swap1.dir/libft/ft_bzero.c.o"
   "CMakeFiles/push_swap1.dir/libft/ft_calloc.c.o"

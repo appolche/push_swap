@@ -33,8 +33,11 @@ t_stack *ft_pop_front(t_stack *stack);
 void print_test(t_stack *stack);
 void free_stack(t_list **frame);
 int	ft_is_number(char *str);
-size_t error_handling(int argc, char **argv);
+int error_handling(int argc, char **argv);
 t_list *frame_init(t_list *frame, int argc, char **argv);
 void ft_quick_sort(int *str, int min, int max);
+int contain_duplicates(int argc, char **argv);
+int contain_maxmin_int(char **argv);
+long	ft_long_atoi(const char *str);
 
 #endif

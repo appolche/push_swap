@@ -10,6 +10,7 @@ t_stack *create_stack(int value)
     node->next = NULL;
     node->prev = NULL;
     node->value = value;
+    node->order = 0;
     return (node);
 }
 

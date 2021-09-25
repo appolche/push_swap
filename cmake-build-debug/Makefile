@@ -48,19 +48,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /snap/clion/164/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake
 
 # The command to remove a file.
-RM = /snap/clion/164/bin/cmake/linux/bin/cmake -E rm -f
+RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/dleaves/projects/push_swap1
+CMAKE_SOURCE_DIR = /Users/dleaves/Desktop/push_swap
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/dleaves/projects/push_swap1/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/dleaves/Desktop/push_swap/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -68,7 +68,7 @@ CMAKE_BINARY_DIR = /home/dleaves/projects/push_swap1/cmake-build-debug
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/snap/clion/164/bin/cmake/linux/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -78,7 +78,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/snap/clion/164/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -87,9 +87,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dleaves/projects/push_swap1/cmake-build-debug/CMakeFiles /home/dleaves/projects/push_swap1/cmake-build-debug//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/dleaves/Desktop/push_swap/cmake-build-debug/CMakeFiles /Users/dleaves/Desktop/push_swap/cmake-build-debug//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dleaves/projects/push_swap1/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/dleaves/Desktop/push_swap/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -128,6 +128,30 @@ push_swap1: cmake_check_build_system
 push_swap1/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap1.dir/build.make CMakeFiles/push_swap1.dir/build
 .PHONY : push_swap1/fast
+
+error_handling.o: error_handling.c.o
+.PHONY : error_handling.o
+
+# target to build an object file
+error_handling.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap1.dir/build.make CMakeFiles/push_swap1.dir/error_handling.c.o
+.PHONY : error_handling.c.o
+
+error_handling.i: error_handling.c.i
+.PHONY : error_handling.i
+
+# target to preprocess a source file
+error_handling.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap1.dir/build.make CMakeFiles/push_swap1.dir/error_handling.c.i
+.PHONY : error_handling.c.i
+
+error_handling.s: error_handling.c.s
+.PHONY : error_handling.s
+
+# target to generate assembly for a file
+error_handling.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap1.dir/build.make CMakeFiles/push_swap1.dir/error_handling.c.s
+.PHONY : error_handling.c.s
 
 libft/ft_atoi.o: libft/ft_atoi.c.o
 .PHONY : libft/ft_atoi.o
@@ -1002,6 +1026,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... push_swap1"
+	@echo "... error_handling.o"
+	@echo "... error_handling.i"
+	@echo "... error_handling.s"
 	@echo "... libft/ft_atoi.o"
 	@echo "... libft/ft_atoi.i"
 	@echo "... libft/ft_atoi.s"
