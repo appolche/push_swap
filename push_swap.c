@@ -1,27 +1,56 @@
 # include "push_swap.h"
 # include <stdio.h>
 
-void ft_quick_sort(int *str, int min, int max)
+void ft_quick_sort(int *str, int first, int last)
 {
-    if (min < max)
+    int i;
+    int j;
+    int pivot;
+    int tmp;
+
+    pivot = first;
+    i = first;
+    j = last;
+
+    if (first < last)
     {
-        int left = min, right = max, middle = str[(left + right) / 2];
-        do
+        while(i < j)
         {
-            while (str[left] < middle) left++;
-            while (str[right] > middle) right--;
-            if (left <= right)
+            while(str[i] <= str[pivot] && i < last)
+                i++;
+            while(str[j] > str[pivot])
+                j--;
+            if(i < j)
             {
-                int tmp = str[left];
-                str[left] = str[right];
-                str[right] = tmp;
-                left++;
-                right--;
+                //меняем i и j местами
+                tmp = str[i];
+                str[i] = str[j];
+                str[j] = tmp;
             }
-        } while (left <= right);
-        ft_quick_sort(str, min, right);
-        ft_quick_sort(str, left, max);
+        }
+        //меняем pivot и j местами
+        tmp = str[pivot];
+        str[pivot] = str[j];
+        str[j] = tmp;
+        ft_quick_sort(str, first, j - 1);
+        ft_quick_sort(str, j + 1, last);
     }
+}
+
+int order_search(int value, const int *sorted_str, t_list *frame)
+{
+    int i;
+
+    i = 0;
+    while(sorted_str[i])
+    {
+        if (sorted_str[i] == value)
+        {
+            return (i + 1);
+        }
+        i++;
+    }
+    return(0);
 }
 
 int *mass_sort(int argc, char **argv, int *str)
@@ -29,9 +58,10 @@ int *mass_sort(int argc, char **argv, int *str)
     int i;
     int min;
     int max;
+    int *sorted_str;
 
     i = 0;
-    min = ft_atoi(argv[1]);
+    /*min = ft_atoi(argv[1]);
     max = ft_atoi(argv[1]);
     while (i != (argc-1))
     {
@@ -39,25 +69,23 @@ int *mass_sort(int argc, char **argv, int *str)
             max = str[i];
         if (str[i] < min)
             min = str[i];
-        printf("%d \n", str[i]);
+        printf("%d ", str[i]);
         i++;
     }
-    printf("\n%d\n\n", max);
-    ft_quick_sort(str, 0, i-1);
-    i = 0;
-    while (i != (argc-1))
+    printf("\n\n%d\n", min);
+    printf("%d\n\n", max);*/
+    sorted_str = (int *) malloc(sizeof(int) * (argc - 1));
+    while (i < argc - 1)
     {
-        if (str[i] > max)
-            max = str[i];
-        if (str[i] < min)
-            min = str[i];
-        printf("%d \n", str[i]);
+        sorted_str[i] = str[i];
         i++;
     }
-    return (str);
+    ft_quick_sort(sorted_str, 0, i-1);
+    return (sorted_str);
 }
 
-int *mass_create(int argc, char **argv) {
+int *mass_create(int argc, char **argv)
+{
     char **tmp;
     int *str;
     int i;
@@ -91,23 +119,40 @@ t_list *frame_init(t_list *frame, int argc, char **argv)
 int main(int argc, char **argv)
 {
     t_list *frame;
+    t_stack *tmp_list;
     int     *str;
+    int     *tmp;
     int     i;
+    int order;
 
     if (error_handling(argc, argv))
         return(0);
+    str = mass_create(argc, argv);
+    tmp = mass_sort(argc, argv, str);
+
+   // order = order_search(str[i], tmp, frame);
+
+
+
     frame = (t_list*)malloc(sizeof(t_list));
     if (!frame)
         return(0);
     frame_init(frame, argc, argv);
-    str = mass_create(argc, argv);
     i = argc - 3;
     while (i >= 0)
     {
         ft_push_back(frame->stack_a, str[i]);
         i--;
     }
-    print_test(frame->stack_a);
+    tmp_list = frame->stack_a;
+    while(tmp_list)
+    {
+        tmp_list->order = order_search(tmp_list->value, tmp, frame);
+        printf("%d, ", tmp_list->order);
+        tmp_list = tmp_list->next;
+    }
+
+    //print_test(frame->stack_a);
     free_stack(&frame);
     return(0);
 }
