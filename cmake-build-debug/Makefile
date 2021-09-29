@@ -993,6 +993,30 @@ list_tools.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap1.dir/build.make CMakeFiles/push_swap1.dir/list_tools.c.s
 .PHONY : list_tools.c.s
 
+mass_processing.o: mass_processing.c.o
+.PHONY : mass_processing.o
+
+# target to build an object file
+mass_processing.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap1.dir/build.make CMakeFiles/push_swap1.dir/mass_processing.c.o
+.PHONY : mass_processing.c.o
+
+mass_processing.i: mass_processing.c.i
+.PHONY : mass_processing.i
+
+# target to preprocess a source file
+mass_processing.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap1.dir/build.make CMakeFiles/push_swap1.dir/mass_processing.c.i
+.PHONY : mass_processing.c.i
+
+mass_processing.s: mass_processing.c.s
+.PHONY : mass_processing.s
+
+# target to generate assembly for a file
+mass_processing.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap1.dir/build.make CMakeFiles/push_swap1.dir/mass_processing.c.s
+.PHONY : mass_processing.c.s
+
 push_swap.o: push_swap.c.o
 .PHONY : push_swap.o
 
@@ -1134,6 +1158,9 @@ help:
 	@echo "... list_tools.o"
 	@echo "... list_tools.i"
 	@echo "... list_tools.s"
+	@echo "... mass_processing.o"
+	@echo "... mass_processing.i"
+	@echo "... mass_processing.s"
 	@echo "... push_swap.o"
 	@echo "... push_swap.i"
 	@echo "... push_swap.s"

@@ -44,6 +44,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/dleaves/Desktop/push_swap/libft/ft_tolower.c" "/Users/dleaves/Desktop/push_swap/cmake-build-debug/CMakeFiles/push_swap1.dir/libft/ft_tolower.c.o"
   "/Users/dleaves/Desktop/push_swap/libft/ft_toupper.c" "/Users/dleaves/Desktop/push_swap/cmake-build-debug/CMakeFiles/push_swap1.dir/libft/ft_toupper.c.o"
   "/Users/dleaves/Desktop/push_swap/list_tools.c" "/Users/dleaves/Desktop/push_swap/cmake-build-debug/CMakeFiles/push_swap1.dir/list_tools.c.o"
+  "/Users/dleaves/Desktop/push_swap/mass_processing.c" "/Users/dleaves/Desktop/push_swap/cmake-build-debug/CMakeFiles/push_swap1.dir/mass_processing.c.o"
   "/Users/dleaves/Desktop/push_swap/push_swap.c" "/Users/dleaves/Desktop/push_swap/cmake-build-debug/CMakeFiles/push_swap1.dir/push_swap.c.o"
   )
 set(CMAKE_C_COMPILER_ID "AppleClang")

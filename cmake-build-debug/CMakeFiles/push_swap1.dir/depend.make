@@ -111,6 +111,10 @@ CMakeFiles/push_swap1.dir/list_tools.c.o: \
  ../libft/libft.h \
  ../list_tools.c \
  ../push_swap.h
+CMakeFiles/push_swap1.dir/mass_processing.c.o: \
+ ../libft/libft.h \
+ ../mass_processing.c \
+ ../push_swap.h
 CMakeFiles/push_swap1.dir/push_swap.c.o: \
  ../libft/libft.h \
  ../push_swap.c \

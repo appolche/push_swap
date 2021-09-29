@@ -37,4 +37,4 @@ libft/ft_strrchr.c
 libft/ft_strtrim.c
 libft/ft_substr.c
 libft/ft_tolower.c
-libft/ft_toupper.c )
+libft/ft_toupper.c mass_processing.c)

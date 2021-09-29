@@ -39,5 +39,8 @@ void ft_quick_sort(int *str, int first, int last);
 int contain_duplicates(int argc, char **argv);
 int contain_maxmin_int(char **argv);
 long	ft_long_atoi(const char *str);
+int *mass_create_and_sort(int argc, char **argv);
+int	mass_already_sorted(const int *str, int size);
+int	write_error(int i);
 
 #endif

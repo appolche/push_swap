@@ -188,6 +188,9 @@
 		<Unit filename="/Users/dleaves/Desktop/push_swap/list_tools.c">
 			<Option target="push_swap1"/>
 		</Unit>
+		<Unit filename="/Users/dleaves/Desktop/push_swap/mass_processing.c">
+			<Option target="push_swap1"/>
+		</Unit>
 		<Unit filename="/Users/dleaves/Desktop/push_swap/push_swap.c">
 			<Option target="push_swap1"/>
 		</Unit>

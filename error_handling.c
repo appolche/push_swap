@@ -1,5 +1,11 @@
 # include "push_swap.h"
 
+int	write_error(int i)
+{
+    write(1, "Error\n", 6);
+    return (i);
+}
+
 long	ft_long_atoi(const char *str)
 {
     long		res;
@@ -118,3 +124,4 @@ int error_handling(int argc, char **argv)
     }
     return (0);
 }
+
