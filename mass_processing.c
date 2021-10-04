@@ -1,4 +1,4 @@
-# include "push_swap.h"
+#include "push_swap.h"
 
 int mass_already_sorted(const int *str, int size)
 {

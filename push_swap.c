@@ -1,5 +1,4 @@
-# include "push_swap.h"
-# include <stdio.h>
+#include "push_swap.h"
 
 int order_search(int value, const int *sorted_str)
 {
@@ -61,22 +60,8 @@ int main(int argc, char **argv)
         i--;
     }
     index_stack(frame->stack_a, str);
-
-    tmp_list = frame->stack_a;
-    while(tmp_list)
-    {
-        printf("Value: %d, ", tmp_list->value);
-        printf("Order: %d\n", tmp_list->order);
-        tmp_list = tmp_list->next;
-    }
-    printf("%d\n", 8>>1);
-    printf("%d\n", 5>>2);
-    printf("%d\n", 2>>4);
-    printf("%d\n", 87>>3);
-
-
-    //print_test(frame->stack_a);
+    print_test(frame->stack_a);
     free(str);
-    free_stack(&frame);
+   // free_stack(&frame);
     return(0);
 }

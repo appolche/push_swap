@@ -1,4 +1,4 @@
-# include "push_swap.h"
+#include "push_swap.h"
 
 t_stack *create_stack(int value)
 {
@@ -25,18 +25,19 @@ void ft_push_back(t_stack *stack, int value)
     }
     node->prev = stack;
     node->next = NULL;
+    node->order = -1;
     node->value = value;
     stack->next = node;
 }
 
 void ft_pop_back(t_stack *stack)
 {
-    while (stack->next)
-    {
-        stack = stack->next;
-    }
-    stack->prev->next = NULL;
-    free(stack);
+    t_stack *tmp_stack;
+
+    tmp_stack = stack_top(stack);
+    if (tmp_stack->prev)
+        tmp_stack->prev->next = NULL;
+    free(tmp_stack);
 }
 
 t_stack *ft_push_front(t_stack *stack, int value)
@@ -71,16 +72,35 @@ t_stack *ft_pop_front(t_stack *stack)
     return (tmp);
 }
 
+t_stack *stack_top(t_stack *stack)
+{
+    t_stack *tmp;
+
+    tmp = stack;
+    while (tmp->next)
+    {
+        tmp = tmp->next;
+    }
+    return (tmp);
+}
+
 void print_test(t_stack *stack)
 {
     t_stack *tmp;
 
     tmp = stack;
-    while (tmp)
+    while(tmp->next)
     {
-        printf("%d\n", tmp->value);
         tmp = tmp->next;
     }
+    while(tmp->prev)
+    {
+        printf("Value: %d, ", tmp->value);
+        printf("Order: %d\n", tmp->order);
+        tmp = tmp->prev;
+    }
+    printf("Value: %d, ", tmp->value);
+    printf("Order: %d\n", tmp->order);
 }
 
 void free_stack(t_list **frame)

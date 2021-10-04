@@ -15,12 +15,16 @@ unistd.h
 /Users/dleaves/Desktop/push_swap/push_swap.c
 push_swap.h
 /Users/dleaves/Desktop/push_swap/push_swap.h
-stdio.h
--
 
 /Users/dleaves/Desktop/push_swap/push_swap.h
+unistd.h
+-
+stdlib.h
+-
 libft/libft.h
 /Users/dleaves/Desktop/push_swap/libft/libft.h
 stdio.h
+-
+fcntl.h
 -
 

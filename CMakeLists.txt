@@ -1,9 +1,9 @@
 cmake_minimum_required(VERSION 3.20)
-project(push_swap1)
+project(push_swap)
 
 set(CMAKE_CXX_STANDARD 98)
 
-add_executable(push_swap1 list_tools.c push_swap.c error_handling.c
+add_executable(push_swap list_tools.c push_swap.c error_handling.c
 libft/ft_atoi.c
 libft/ft_bzero.c
 libft/ft_calloc.c
@@ -37,4 +37,9 @@ libft/ft_strrchr.c
 libft/ft_strtrim.c
 libft/ft_substr.c
 libft/ft_tolower.c
-libft/ft_toupper.c mass_processing.c)
+libft/ft_toupper.c
+        mass_processing.c
+        do_rotate.c
+        do_reverse_rotate.c
+        do_swap.c
+        do_push.c)
