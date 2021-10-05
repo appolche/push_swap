@@ -12,7 +12,7 @@ void do_pa(t_stack **stack_a, t_stack **stack_b)
         top_stack_b = stack_top(*stack_b);
         tmp_value = top_stack_b->value;
         tmp_order = top_stack_b->order;
-        ft_pop_back(*stack_b);
+        ft_pop_back(&(*stack_b));
         if (*stack_a)
             ft_push_back(*stack_a, tmp_value);
         else
@@ -35,7 +35,7 @@ void do_pb(t_stack **stack_a, t_stack **stack_b)
         top_stack_a = stack_top(*stack_a);
         tmp_value = top_stack_a->value;
         tmp_order = top_stack_a->order;
-        ft_pop_back(*stack_a);
+        ft_pop_back(&(*stack_a));
         if (*stack_b)
             ft_push_back(*stack_b, tmp_value);
         else

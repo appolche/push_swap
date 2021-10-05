@@ -23,20 +23,22 @@ void ft_push_back(t_stack *stack, int value)
     {
         stack = stack->next;
     }
+    stack->next = node;
     node->prev = stack;
     node->next = NULL;
     node->order = -1;
     node->value = value;
-    stack->next = node;
 }
 
-void ft_pop_back(t_stack *stack)
+void ft_pop_back(t_stack **stack)
 {
     t_stack *tmp_stack;
 
-    tmp_stack = stack_top(stack);
+    tmp_stack = stack_top(*stack);
     if (tmp_stack->prev)
         tmp_stack->prev->next = NULL;
+    else
+        *stack = NULL;
     free(tmp_stack);
 }
 
@@ -88,19 +90,22 @@ void print_test(t_stack *stack)
 {
     t_stack *tmp;
 
-    tmp = stack;
-    while(tmp->next)
+    if (stack)
     {
-        tmp = tmp->next;
-    }
-    while(tmp->prev)
-    {
+        tmp = stack;
+        while (tmp->next) {
+            tmp = tmp->next;
+        }
+        while (tmp->prev) {
+            printf("Value: %d, ", tmp->value);
+            printf("Order: %d\n", tmp->order);
+            tmp = tmp->prev;
+        }
         printf("Value: %d, ", tmp->value);
         printf("Order: %d\n", tmp->order);
-        tmp = tmp->prev;
     }
-    printf("Value: %d, ", tmp->value);
-    printf("Order: %d\n", tmp->order);
+    else
+        return ;
 }
 
 void free_stack(t_list **frame)

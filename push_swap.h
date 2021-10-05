@@ -21,7 +21,7 @@ typedef struct		s_list
 	t_stack         *stack_a;
 	t_stack         *stack_b;
 
-	char			**argv;
+    int             stack_size;
 }					t_list;
 
 
@@ -29,7 +29,7 @@ t_stack *create_stack(int value);
 t_list *frame_init(t_list *frame, int argc, char **argv);
 
 void ft_push_back(t_stack *stack, int value);
-void ft_pop_back(t_stack *stack);
+void ft_pop_back(t_stack **stack);
 t_stack *ft_push_front(t_stack *stack, int value);
 t_stack *ft_pop_front(t_stack *stack);
 t_stack *stack_top(t_stack *stack);
