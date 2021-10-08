@@ -13,6 +13,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/dleaves/Desktop/push_swap/do_rotate.c" "/Users/dleaves/Desktop/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/do_rotate.c.o"
   "/Users/dleaves/Desktop/push_swap/do_swap.c" "/Users/dleaves/Desktop/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/do_swap.c.o"
   "/Users/dleaves/Desktop/push_swap/error_handling.c" "/Users/dleaves/Desktop/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/error_handling.c.o"
+  "/Users/dleaves/Desktop/push_swap/init_struct.c" "/Users/dleaves/Desktop/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/init_struct.c.o"
   "/Users/dleaves/Desktop/push_swap/libft/ft_atoi.c" "/Users/dleaves/Desktop/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/libft/ft_atoi.c.o"
   "/Users/dleaves/Desktop/push_swap/libft/ft_bzero.c" "/Users/dleaves/Desktop/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/libft/ft_bzero.c.o"
   "/Users/dleaves/Desktop/push_swap/libft/ft_calloc.c" "/Users/dleaves/Desktop/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/libft/ft_calloc.c.o"
@@ -48,8 +49,9 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/dleaves/Desktop/push_swap/libft/ft_tolower.c" "/Users/dleaves/Desktop/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/libft/ft_tolower.c.o"
   "/Users/dleaves/Desktop/push_swap/libft/ft_toupper.c" "/Users/dleaves/Desktop/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/libft/ft_toupper.c.o"
   "/Users/dleaves/Desktop/push_swap/list_tools.c" "/Users/dleaves/Desktop/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/list_tools.c.o"
-  "/Users/dleaves/Desktop/push_swap/mass_processing.c" "/Users/dleaves/Desktop/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/mass_processing.c.o"
   "/Users/dleaves/Desktop/push_swap/push_swap.c" "/Users/dleaves/Desktop/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/push_swap.c.o"
+  "/Users/dleaves/Desktop/push_swap/sort_stack.c" "/Users/dleaves/Desktop/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/sort_stack.c.o"
+  "/Users/dleaves/Desktop/push_swap/str_processing.c" "/Users/dleaves/Desktop/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/str_processing.c.o"
   )
 set(CMAKE_C_COMPILER_ID "AppleClang")
 

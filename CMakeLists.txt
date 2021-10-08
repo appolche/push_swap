@@ -38,8 +38,8 @@ libft/ft_strtrim.c
 libft/ft_substr.c
 libft/ft_tolower.c
 libft/ft_toupper.c
-        mass_processing.c
+        str_processing.c
         do_rotate.c
         do_reverse_rotate.c
         do_swap.c
-        do_push.c)
+        do_push.c sort_stack.c init_struct.c)

@@ -4,6 +4,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/push_swap.dir/do_rotate.c.o"
   "CMakeFiles/push_swap.dir/do_swap.c.o"
   "CMakeFiles/push_swap.dir/error_handling.c.o"
+  "CMakeFiles/push_swap.dir/init_struct.c.o"
   "CMakeFiles/push_swap.dir/libft/ft_atoi.c.o"
   "CMakeFiles/push_swap.dir/libft/ft_bzero.c.o"
   "CMakeFiles/push_swap.dir/libft/ft_calloc.c.o"
@@ -39,8 +40,9 @@ file(REMOVE_RECURSE
   "CMakeFiles/push_swap.dir/libft/ft_tolower.c.o"
   "CMakeFiles/push_swap.dir/libft/ft_toupper.c.o"
   "CMakeFiles/push_swap.dir/list_tools.c.o"
-  "CMakeFiles/push_swap.dir/mass_processing.c.o"
   "CMakeFiles/push_swap.dir/push_swap.c.o"
+  "CMakeFiles/push_swap.dir/sort_stack.c.o"
+  "CMakeFiles/push_swap.dir/str_processing.c.o"
   "push_swap"
   "push_swap.pdb"
 )

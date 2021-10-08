@@ -1,19 +1,5 @@
 #include "push_swap.h"
 
-int mass_already_sorted(const int *str, int size)
-{
-    int	i;
-
-    i = 0;
-    while (i < size - 1)
-    {
-        if (str[i] > str[i + 1])
-            return (-1);
-        i++;
-    }
-    return (1);
-}
-
 void ft_quick_sort(int *str, int first, int last)
 {
     int i;
@@ -50,35 +36,36 @@ void ft_quick_sort(int *str, int first, int last)
     }
 }
 
-int *mass_create_and_sort(int argc, char **argv)
+int str_already_sorted(const int *str, int size)
 {
-    char **tmp;
+    int	i;
+
+    i = 0;
+    while (i < size - 1)
+    {
+        if (str[i] > str[i + 1])
+            return (-1);
+        i++;
+    }
+    return (1);
+}
+
+int *str_create_and_sort(int argc, char **argv)
+{
     int *str;
     int i;
     int j;
 
     str = (int *) malloc(sizeof(int) * (argc - 1));
     if (!str)
-        return (NULL);
+        return (0);
     i = 1;
     j = 0;
-    tmp = argv;
     while (j < (argc - 1))
-    {
-        str[j] = ft_atoi(tmp[i]);
-        i++;
-        j++;
-    }
-    if (mass_already_sorted(str, j) == 1)
-        return (NULL);
+        str[j++] = ft_atoi(argv[i++]);
+    if (str_already_sorted(str, j) == 1)
+        return (0);
     else
-        ft_quick_sort(str, 0, j-1);
-    j=0;
-    while (j < (argc - 1))
-    {
-        printf("%d, ", str[j]);
-        j++;
-    }
-    printf("\n\n");
+        ft_quick_sort(str, 0, j - 1);
     return (str);
 }

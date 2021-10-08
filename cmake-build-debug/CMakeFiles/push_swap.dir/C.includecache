@@ -12,10 +12,6 @@ stdlib.h
 unistd.h
 -
 
-/Users/dleaves/Desktop/push_swap/push_swap.c
-push_swap.h
-/Users/dleaves/Desktop/push_swap/push_swap.h
-
 /Users/dleaves/Desktop/push_swap/push_swap.h
 unistd.h
 -
@@ -27,4 +23,8 @@ stdio.h
 -
 fcntl.h
 -
+
+/Users/dleaves/Desktop/push_swap/str_processing.c
+push_swap.h
+/Users/dleaves/Desktop/push_swap/push_swap.h
 

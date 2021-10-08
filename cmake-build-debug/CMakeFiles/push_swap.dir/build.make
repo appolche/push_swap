@@ -547,18 +547,18 @@ CMakeFiles/push_swap.dir/libft/ft_toupper.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/push_swap.dir/libft/ft_toupper.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/dleaves/Desktop/push_swap/libft/ft_toupper.c -o CMakeFiles/push_swap.dir/libft/ft_toupper.c.s
 
-CMakeFiles/push_swap.dir/mass_processing.c.o: CMakeFiles/push_swap.dir/flags.make
-CMakeFiles/push_swap.dir/mass_processing.c.o: ../mass_processing.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dleaves/Desktop/push_swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object CMakeFiles/push_swap.dir/mass_processing.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/push_swap.dir/mass_processing.c.o -c /Users/dleaves/Desktop/push_swap/mass_processing.c
+CMakeFiles/push_swap.dir/str_processing.c.o: CMakeFiles/push_swap.dir/flags.make
+CMakeFiles/push_swap.dir/str_processing.c.o: ../str_processing.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dleaves/Desktop/push_swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object CMakeFiles/push_swap.dir/str_processing.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/push_swap.dir/str_processing.c.o -c /Users/dleaves/Desktop/push_swap/str_processing.c
 
-CMakeFiles/push_swap.dir/mass_processing.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/push_swap.dir/mass_processing.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/dleaves/Desktop/push_swap/mass_processing.c > CMakeFiles/push_swap.dir/mass_processing.c.i
+CMakeFiles/push_swap.dir/str_processing.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/push_swap.dir/str_processing.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/dleaves/Desktop/push_swap/str_processing.c > CMakeFiles/push_swap.dir/str_processing.c.i
 
-CMakeFiles/push_swap.dir/mass_processing.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/push_swap.dir/mass_processing.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/dleaves/Desktop/push_swap/mass_processing.c -o CMakeFiles/push_swap.dir/mass_processing.c.s
+CMakeFiles/push_swap.dir/str_processing.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/push_swap.dir/str_processing.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/dleaves/Desktop/push_swap/str_processing.c -o CMakeFiles/push_swap.dir/str_processing.c.s
 
 CMakeFiles/push_swap.dir/do_rotate.c.o: CMakeFiles/push_swap.dir/flags.make
 CMakeFiles/push_swap.dir/do_rotate.c.o: ../do_rotate.c
@@ -612,6 +612,32 @@ CMakeFiles/push_swap.dir/do_push.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/push_swap.dir/do_push.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/dleaves/Desktop/push_swap/do_push.c -o CMakeFiles/push_swap.dir/do_push.c.s
 
+CMakeFiles/push_swap.dir/sort_stack.c.o: CMakeFiles/push_swap.dir/flags.make
+CMakeFiles/push_swap.dir/sort_stack.c.o: ../sort_stack.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dleaves/Desktop/push_swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building C object CMakeFiles/push_swap.dir/sort_stack.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/push_swap.dir/sort_stack.c.o -c /Users/dleaves/Desktop/push_swap/sort_stack.c
+
+CMakeFiles/push_swap.dir/sort_stack.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/push_swap.dir/sort_stack.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/dleaves/Desktop/push_swap/sort_stack.c > CMakeFiles/push_swap.dir/sort_stack.c.i
+
+CMakeFiles/push_swap.dir/sort_stack.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/push_swap.dir/sort_stack.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/dleaves/Desktop/push_swap/sort_stack.c -o CMakeFiles/push_swap.dir/sort_stack.c.s
+
+CMakeFiles/push_swap.dir/init_struct.c.o: CMakeFiles/push_swap.dir/flags.make
+CMakeFiles/push_swap.dir/init_struct.c.o: ../init_struct.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dleaves/Desktop/push_swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building C object CMakeFiles/push_swap.dir/init_struct.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/push_swap.dir/init_struct.c.o -c /Users/dleaves/Desktop/push_swap/init_struct.c
+
+CMakeFiles/push_swap.dir/init_struct.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/push_swap.dir/init_struct.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/dleaves/Desktop/push_swap/init_struct.c > CMakeFiles/push_swap.dir/init_struct.c.i
+
+CMakeFiles/push_swap.dir/init_struct.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/push_swap.dir/init_struct.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/dleaves/Desktop/push_swap/init_struct.c -o CMakeFiles/push_swap.dir/init_struct.c.s
+
 # Object files for target push_swap
 push_swap_OBJECTS = \
 "CMakeFiles/push_swap.dir/list_tools.c.o" \
@@ -651,11 +677,13 @@ push_swap_OBJECTS = \
 "CMakeFiles/push_swap.dir/libft/ft_substr.c.o" \
 "CMakeFiles/push_swap.dir/libft/ft_tolower.c.o" \
 "CMakeFiles/push_swap.dir/libft/ft_toupper.c.o" \
-"CMakeFiles/push_swap.dir/mass_processing.c.o" \
+"CMakeFiles/push_swap.dir/str_processing.c.o" \
 "CMakeFiles/push_swap.dir/do_rotate.c.o" \
 "CMakeFiles/push_swap.dir/do_reverse_rotate.c.o" \
 "CMakeFiles/push_swap.dir/do_swap.c.o" \
-"CMakeFiles/push_swap.dir/do_push.c.o"
+"CMakeFiles/push_swap.dir/do_push.c.o" \
+"CMakeFiles/push_swap.dir/sort_stack.c.o" \
+"CMakeFiles/push_swap.dir/init_struct.c.o"
 
 # External object files for target push_swap
 push_swap_EXTERNAL_OBJECTS =
@@ -697,14 +725,16 @@ push_swap: CMakeFiles/push_swap.dir/libft/ft_strtrim.c.o
 push_swap: CMakeFiles/push_swap.dir/libft/ft_substr.c.o
 push_swap: CMakeFiles/push_swap.dir/libft/ft_tolower.c.o
 push_swap: CMakeFiles/push_swap.dir/libft/ft_toupper.c.o
-push_swap: CMakeFiles/push_swap.dir/mass_processing.c.o
+push_swap: CMakeFiles/push_swap.dir/str_processing.c.o
 push_swap: CMakeFiles/push_swap.dir/do_rotate.c.o
 push_swap: CMakeFiles/push_swap.dir/do_reverse_rotate.c.o
 push_swap: CMakeFiles/push_swap.dir/do_swap.c.o
 push_swap: CMakeFiles/push_swap.dir/do_push.c.o
+push_swap: CMakeFiles/push_swap.dir/sort_stack.c.o
+push_swap: CMakeFiles/push_swap.dir/init_struct.c.o
 push_swap: CMakeFiles/push_swap.dir/build.make
 push_swap: CMakeFiles/push_swap.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/dleaves/Desktop/push_swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Linking C executable push_swap"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/dleaves/Desktop/push_swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Linking C executable push_swap"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/push_swap.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

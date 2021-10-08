@@ -27,6 +27,8 @@ typedef struct		s_list
 
 t_stack *create_stack(int value);
 t_list *frame_init(t_list *frame, int argc, char **argv);
+void	index_stack(t_stack *stack_a, int *str);
+int order_search(int value, const int *sorted_str);
 
 void ft_push_back(t_stack *stack, int value);
 void ft_pop_back(t_stack **stack);
@@ -42,9 +44,14 @@ int	write_error(int i);
 int contain_duplicates(int argc, char **argv);
 int contain_maxmin_int(char **argv);
 long	ft_long_atoi(const char *str);
-int *mass_create_and_sort(int argc, char **argv);
+int *str_create_and_sort(int argc, char **argv);
+int	str_already_sorted(const int *str, int size);
 void ft_quick_sort(int *str, int first, int last);
-int	mass_already_sorted(const int *str, int size);
+
+void			sort_small_stack(t_list *frame);
+static void		sort_4_or_5_elements(t_list *frame);
+static void		sort_3_elements(t_list *frame);
+static void		sort_2_elements(t_list *frame);
 
 void	do_ra(t_stack **stack_a);
 void	do_rb(t_stack **stack_b);
