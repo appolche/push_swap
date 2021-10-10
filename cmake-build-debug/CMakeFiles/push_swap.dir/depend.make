@@ -21,8 +21,8 @@ CMakeFiles/push_swap.dir/error_handling.c.o: \
  ../error_handling.c \
  ../libft/libft.h \
  ../push_swap.h
-CMakeFiles/push_swap.dir/init_struct.c.o: \
- ../init_struct.c \
+CMakeFiles/push_swap.dir/frame_processing.c.o: \
+ ../frame_processing.c \
  ../libft/libft.h \
  ../push_swap.h
 CMakeFiles/push_swap.dir/libft/ft_atoi.c.o: \
@@ -131,15 +131,19 @@ CMakeFiles/push_swap.dir/list_tools.c.o: \
  ../libft/libft.h \
  ../list_tools.c \
  ../push_swap.h
-CMakeFiles/push_swap.dir/push_swap.c.o: \
+CMakeFiles/push_swap.dir/push_swap_main.c.o: \
  ../libft/libft.h \
- ../push_swap.c \
- ../push_swap.h
+ ../push_swap.h \
+ ../push_swap_main.c
 CMakeFiles/push_swap.dir/sort_stack.c.o: \
  ../libft/libft.h \
  ../push_swap.h \
  ../sort_stack.c
-CMakeFiles/push_swap.dir/str_processing.c.o: \
+CMakeFiles/push_swap.dir/string_processing.c.o: \
  ../libft/libft.h \
  ../push_swap.h \
- ../str_processing.c
+ ../string_processing.c
+CMakeFiles/push_swap.dir/utils.c.o: \
+ ../libft/libft.h \
+ ../push_swap.h \
+ ../utils.c

@@ -249,29 +249,29 @@ error_handling.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/error_handling.c.s
 .PHONY : error_handling.c.s
 
-init_struct.o: init_struct.c.o
-.PHONY : init_struct.o
+frame_processing.o: frame_processing.c.o
+.PHONY : frame_processing.o
 
 # target to build an object file
-init_struct.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/init_struct.c.o
-.PHONY : init_struct.c.o
+frame_processing.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/frame_processing.c.o
+.PHONY : frame_processing.c.o
 
-init_struct.i: init_struct.c.i
-.PHONY : init_struct.i
+frame_processing.i: frame_processing.c.i
+.PHONY : frame_processing.i
 
 # target to preprocess a source file
-init_struct.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/init_struct.c.i
-.PHONY : init_struct.c.i
+frame_processing.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/frame_processing.c.i
+.PHONY : frame_processing.c.i
 
-init_struct.s: init_struct.c.s
-.PHONY : init_struct.s
+frame_processing.s: frame_processing.c.s
+.PHONY : frame_processing.s
 
 # target to generate assembly for a file
-init_struct.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/init_struct.c.s
-.PHONY : init_struct.c.s
+frame_processing.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/frame_processing.c.s
+.PHONY : frame_processing.c.s
 
 libft/ft_atoi.o: libft/ft_atoi.c.o
 .PHONY : libft/ft_atoi.o
@@ -1113,29 +1113,29 @@ list_tools.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/list_tools.c.s
 .PHONY : list_tools.c.s
 
-push_swap.o: push_swap.c.o
-.PHONY : push_swap.o
+push_swap_main.o: push_swap_main.c.o
+.PHONY : push_swap_main.o
 
 # target to build an object file
-push_swap.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/push_swap.c.o
-.PHONY : push_swap.c.o
+push_swap_main.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/push_swap_main.c.o
+.PHONY : push_swap_main.c.o
 
-push_swap.i: push_swap.c.i
-.PHONY : push_swap.i
+push_swap_main.i: push_swap_main.c.i
+.PHONY : push_swap_main.i
 
 # target to preprocess a source file
-push_swap.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/push_swap.c.i
-.PHONY : push_swap.c.i
+push_swap_main.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/push_swap_main.c.i
+.PHONY : push_swap_main.c.i
 
-push_swap.s: push_swap.c.s
-.PHONY : push_swap.s
+push_swap_main.s: push_swap_main.c.s
+.PHONY : push_swap_main.s
 
 # target to generate assembly for a file
-push_swap.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/push_swap.c.s
-.PHONY : push_swap.c.s
+push_swap_main.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/push_swap_main.c.s
+.PHONY : push_swap_main.c.s
 
 sort_stack.o: sort_stack.c.o
 .PHONY : sort_stack.o
@@ -1161,29 +1161,53 @@ sort_stack.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/sort_stack.c.s
 .PHONY : sort_stack.c.s
 
-str_processing.o: str_processing.c.o
-.PHONY : str_processing.o
+string_processing.o: string_processing.c.o
+.PHONY : string_processing.o
 
 # target to build an object file
-str_processing.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/str_processing.c.o
-.PHONY : str_processing.c.o
+string_processing.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/string_processing.c.o
+.PHONY : string_processing.c.o
 
-str_processing.i: str_processing.c.i
-.PHONY : str_processing.i
+string_processing.i: string_processing.c.i
+.PHONY : string_processing.i
 
 # target to preprocess a source file
-str_processing.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/str_processing.c.i
-.PHONY : str_processing.c.i
+string_processing.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/string_processing.c.i
+.PHONY : string_processing.c.i
 
-str_processing.s: str_processing.c.s
-.PHONY : str_processing.s
+string_processing.s: string_processing.c.s
+.PHONY : string_processing.s
 
 # target to generate assembly for a file
-str_processing.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/str_processing.c.s
-.PHONY : str_processing.c.s
+string_processing.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/string_processing.c.s
+.PHONY : string_processing.c.s
+
+utils.o: utils.c.o
+.PHONY : utils.o
+
+# target to build an object file
+utils.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/utils.c.o
+.PHONY : utils.c.o
+
+utils.i: utils.c.i
+.PHONY : utils.i
+
+# target to preprocess a source file
+utils.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/utils.c.i
+.PHONY : utils.c.i
+
+utils.s: utils.c.s
+.PHONY : utils.s
+
+# target to generate assembly for a file
+utils.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/utils.c.s
+.PHONY : utils.c.s
 
 # Help Target
 help:
@@ -1209,9 +1233,9 @@ help:
 	@echo "... error_handling.o"
 	@echo "... error_handling.i"
 	@echo "... error_handling.s"
-	@echo "... init_struct.o"
-	@echo "... init_struct.i"
-	@echo "... init_struct.s"
+	@echo "... frame_processing.o"
+	@echo "... frame_processing.i"
+	@echo "... frame_processing.s"
 	@echo "... libft/ft_atoi.o"
 	@echo "... libft/ft_atoi.i"
 	@echo "... libft/ft_atoi.s"
@@ -1317,15 +1341,18 @@ help:
 	@echo "... list_tools.o"
 	@echo "... list_tools.i"
 	@echo "... list_tools.s"
-	@echo "... push_swap.o"
-	@echo "... push_swap.i"
-	@echo "... push_swap.s"
+	@echo "... push_swap_main.o"
+	@echo "... push_swap_main.i"
+	@echo "... push_swap_main.s"
 	@echo "... sort_stack.o"
 	@echo "... sort_stack.i"
 	@echo "... sort_stack.s"
-	@echo "... str_processing.o"
-	@echo "... str_processing.i"
-	@echo "... str_processing.s"
+	@echo "... string_processing.o"
+	@echo "... string_processing.i"
+	@echo "... string_processing.s"
+	@echo "... utils.o"
+	@echo "... utils.i"
+	@echo "... utils.s"
 .PHONY : help
 
 

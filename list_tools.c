@@ -86,6 +86,21 @@ t_stack *stack_top(t_stack *stack)
     return (tmp);
 }
 
+int find_stack_size(t_stack *stack)
+{
+    t_stack *tmp;
+    int size;
+
+    tmp = stack;
+    size = 0;
+    while (tmp->next)
+    {
+        size++;
+        tmp = tmp->next;
+    }
+    return (size);
+}
+
 void print_test(t_stack *stack)
 {
     t_stack *tmp;
@@ -108,23 +123,31 @@ void print_test(t_stack *stack)
         return ;
 }
 
-void free_stack(t_list **frame)
+void free_frame(t_frame **frame)
 {
     t_stack *tmp;
-    t_stack *st_a = (*frame)->stack_a;
-    t_stack *st_b = (*frame)->stack_b;
+    t_stack *st_a;
+    t_stack *st_b;
 
-    while (st_a)
+    if ((*frame)->stack_a)
     {
-        tmp = (st_a)->next;
-        free(st_a);
-        st_a = tmp;
+        st_a = (*frame)->stack_a;
+        while (st_a)
+        {
+            tmp = (st_a)->next;
+            free(st_a);
+            st_a = tmp;
+        }
     }
-    while (st_b)
+    if ((*frame)->stack_b)
     {
-        tmp = (st_b)->next;
-        free(st_b);
-        st_b = tmp;
+        st_b = (*frame)->stack_b;
+        while (st_b)
+        {
+            tmp = (st_b)->next;
+            free(st_b);
+            st_b = tmp;
+        }
     }
     free(*frame);
 }

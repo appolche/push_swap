@@ -19,8 +19,8 @@ void do_pa(t_stack **stack_a, t_stack **stack_b)
             *stack_a = create_stack(tmp_value);
         top_stack_a = stack_top(*stack_a);
         top_stack_a->order = tmp_order;
+        write(1, "pa\n", 3);
     }
-    write(1, "pa\n", 3);
 }
 
 void do_pb(t_stack **stack_a, t_stack **stack_b)
@@ -42,6 +42,6 @@ void do_pb(t_stack **stack_a, t_stack **stack_b)
             *stack_b = create_stack(tmp_value);
         top_stack_b = stack_top(*stack_b);
         top_stack_b->order = tmp_order;
+        write(1, "pb\n", 3);
     }
-    write(1, "pb\n", 3);
 }

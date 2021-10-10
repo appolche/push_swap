@@ -95,7 +95,7 @@
 		<Unit filename="/Users/dleaves/Desktop/push_swap/error_handling.c">
 			<Option target="push_swap"/>
 		</Unit>
-		<Unit filename="/Users/dleaves/Desktop/push_swap/init_struct.c">
+		<Unit filename="/Users/dleaves/Desktop/push_swap/frame_processing.c">
 			<Option target="push_swap"/>
 		</Unit>
 		<Unit filename="/Users/dleaves/Desktop/push_swap/libft/ft_atoi.c">
@@ -203,16 +203,16 @@
 		<Unit filename="/Users/dleaves/Desktop/push_swap/list_tools.c">
 			<Option target="push_swap"/>
 		</Unit>
-		<Unit filename="/Users/dleaves/Desktop/push_swap/push_swap.c">
-			<Option target="push_swap"/>
-		</Unit>
-		<Unit filename="/Users/dleaves/Desktop/push_swap/push_swap.h">
+		<Unit filename="/Users/dleaves/Desktop/push_swap/push_swap_main.c">
 			<Option target="push_swap"/>
 		</Unit>
 		<Unit filename="/Users/dleaves/Desktop/push_swap/sort_stack.c">
 			<Option target="push_swap"/>
 		</Unit>
-		<Unit filename="/Users/dleaves/Desktop/push_swap/str_processing.c">
+		<Unit filename="/Users/dleaves/Desktop/push_swap/string_processing.c">
+			<Option target="push_swap"/>
+		</Unit>
+		<Unit filename="/Users/dleaves/Desktop/push_swap/utils.c">
 			<Option target="push_swap"/>
 		</Unit>
 		<Unit filename="/Users/dleaves/Desktop/push_swap/CMakeLists.txt">

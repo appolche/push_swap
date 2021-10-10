@@ -6,6 +6,10 @@
 
 #IncludeRegexTransform: 
 
+/Users/dleaves/Desktop/push_swap/do_reverse_rotate.c
+push_swap.h
+/Users/dleaves/Desktop/push_swap/push_swap.h
+
 /Users/dleaves/Desktop/push_swap/libft/libft.h
 stdlib.h
 -
@@ -23,8 +27,4 @@ stdio.h
 -
 fcntl.h
 -
-
-/Users/dleaves/Desktop/push_swap/str_processing.c
-push_swap.h
-/Users/dleaves/Desktop/push_swap/push_swap.h
 
