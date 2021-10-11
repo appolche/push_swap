@@ -50,6 +50,7 @@ int		contain_max_min_int(char **argv);
 int		str_already_sorted(const int *str, int size);
 int		*str_create_and_sort(int argc, char **argv);
 void	ft_quick_sort(int *str, int first, int last);
+void	ft_swap_elements(int *str, int i, int j);
 
 void	radix_sort_big_stack(int argc, t_frame *frame);
 void	sort_small_stack(t_frame *frame);

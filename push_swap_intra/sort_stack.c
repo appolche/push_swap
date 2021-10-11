@@ -73,24 +73,21 @@ void	radix_sort_big_stack(int argc, t_frame *frame)
 
 	stack_size = argc - 1;
 	max_bits = 0;
-	k = 0;
+	k = -1;
 	while ((stack_size >> max_bits) != 0)
 		++max_bits;
-	stack_size = argc - 1;
-	while (k < max_bits)
+	while (++k < max_bits)
 	{
 		j = 0;
-		while (j < stack_size)
+		while (j++ < stack_size)
 		{
 			top_order = stack_top(frame->stack_a)->order;
 			if (((top_order >> k) & 1) == 1)
 				do_ra(&frame->stack_a);
 			else
 				do_pb(&frame->stack_a, &frame->stack_b);
-			++j;
 		}
 		while (frame->stack_b)
 			do_pa(&frame->stack_a, &frame->stack_b);
-		++k;
 	}
 }

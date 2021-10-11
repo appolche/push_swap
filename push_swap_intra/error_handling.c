@@ -14,7 +14,7 @@
 
 int	write_error(int i)
 {
-	write(1, "Error\n", 6);
+	write(2, "Error\n", 6);
 	return (i);
 }
 
@@ -64,7 +64,7 @@ int	error_handling(int argc, char **argv)
 
 	i = 1;
 	if (argc < 2)
-		return (1);
+		return (0);
 	while (argv[i])
 	{
 		if (!ft_is_number(argv[i]))

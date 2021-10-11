@@ -1,5 +1,5 @@
 NAME = push_swap
-SRC =  push_swap_main.c\
+SRC =  push_swap.c\
 		error_handling.c\
 		string_processing.c frame_processing.c\
 		sort_stack.c\
@@ -23,4 +23,4 @@ fclean: clean
 
 re: fclean all
 
-.PHONY: all, clean, fclean, re
+.PHONY: all clean fclean re

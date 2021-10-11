@@ -59,7 +59,7 @@ t_frame	*create_frame(int argc, char **argv, int *str)
 
 	frame = (t_frame *)malloc(sizeof(t_frame));
 	if (!frame)
-		return (0);
+		return (NULL);
 	frame_init(frame, argc, argv);
 	i = argc - 2;
 	while (i >= 1)

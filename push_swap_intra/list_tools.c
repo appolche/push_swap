@@ -72,7 +72,7 @@ int	find_stack_size(t_stack *stack)
 	int		size;
 
 	tmp = stack;
-	size = 0;
+	size = 1;
 	while (tmp->next)
 	{
 		size++;

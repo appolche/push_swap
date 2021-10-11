@@ -12,6 +12,15 @@
 
 #include "push_swap.h"
 
+void	ft_swap_elements(int *str, int i, int j)
+{
+	int	tmp;
+
+	tmp = str[i];
+	str[i] = str[j];
+	str[j] = tmp;
+}
+
 void	ft_quick_sort(int *str, int first, int last)
 {
 	int	i;
@@ -31,11 +40,7 @@ void	ft_quick_sort(int *str, int first, int last)
 			while (str[j] > str[pivot])
 				j--;
 			if (i < j)
-			{
-				tmp = str[i];
-				str[i] = str[j];
-				str[j] = tmp;
-			}
+				ft_swap_elements(str, i, j);
 		}
 		tmp = str[pivot];
 		str[pivot] = str[j];
